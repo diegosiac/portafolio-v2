@@ -49,11 +49,12 @@ import LinkedIn from './icons/LinkedIn.astro';
 
 <style>
   .aboutMe {
-    background: rgb(207,207,207);
-    background: linear-gradient(276deg, rgba(207,207,207,1) 0%, rgba(207,207,207,1) 19%, rgba(217,217,217,1) 45%, rgba(227,227,227,1) 73%, rgba(255,255,255,1) 92%);
+    background: rgb(196,218,221);
+background: radial-gradient(circle, rgba(196,218,221,1) 0%, rgba(255,255,255,1) 92%);
     display: flex;
     flex-direction: column;
     padding: 120px 25px;
+    color: #000;
   }
 
   .profile-img {
@@ -96,6 +97,7 @@ import LinkedIn from './icons/LinkedIn.astro';
 
   .aboutMe-title .name {
     font-size: 33px;
+    letter-spacing: -.1ch;
     margin-bottom: 7px;
     position: relative;
     z-index: 10;
@@ -104,18 +106,18 @@ import LinkedIn from './icons/LinkedIn.astro';
   .aboutMe-title .name::before {
     position: absolute;
     content: "";
-    background-color: #ff77007c;
-    width: 170px;
-    height: 25px;
+    background-color: #ff5f5f8b;
+    width: 155px;
+    height: 15px;
     border-radius: 2px;
-    left: -4px;
+    left: -5px;
     bottom: 2px;
     z-index: -1;
   }
 
   .aboutMe-title .description {
     font-size: 20px;
-    opacity: .5;
+    opacity: .6;
   }
 
   .aboutMe-description {
@@ -143,12 +145,12 @@ import LinkedIn from './icons/LinkedIn.astro';
     gap: 10px;
     border-radius: 5px;
     color: #fff;
-    background-color: #000;
+    background-color: #6a8d92;
     transition: background-color .2s;
   }
 
   .button-icon:hover {
-    background-color: #414141;
+    background-color: #4f838b;
   }
 
   .aboutMe-icon .icon{

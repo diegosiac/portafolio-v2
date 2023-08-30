@@ -1,0 +1,58 @@
+---
+import CardProject from './CardProject.astro';
+
+---
+
+<section class='projects'>
+	<h2 class='title'>PROYE<span>CTOS</span></h2>
+	<div class='projects-container'>
+		<CardProject position='left'/>
+		<CardProject position='right'/>
+		<CardProject position='left'/>
+		<CardProject position='right'/>
+	</div>
+</section>
+
+<style>
+	.projects {
+    background-color: #fff;
+		display: flex;
+    flex-direction: column;
+    align-items: center;
+		padding: 80px 0px;
+	}
+
+	.title {
+		font-size: 40px;
+		margin-bottom: 50px;
+		position: relative;
+    color: #000;
+    letter-spacing: -.1ch;
+    z-index: 10;
+    margin-bottom: 120px;
+	}
+
+  .title span {
+    color: #fff;
+  }
+
+	.title::after {
+		position: absolute;
+    content: "";
+    background-color: #446d76;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    right: -15px;
+    bottom: -30px;
+    z-index: -1;
+	}
+
+	.projects-container {
+		display: flex;
+		flex-direction: column;
+    align-items: center;
+    width: 100%;
+	}
+
+</style>
