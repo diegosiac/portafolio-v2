@@ -1,0 +1,11 @@
+{
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "astro",
+        "typescript"
+    ],
+    "cSpell.enableFiletypes": [
+        "astro"
+    ]
+}

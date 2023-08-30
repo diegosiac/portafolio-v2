@@ -1,0 +1,47 @@
+{
+    "lang": "ES",
+    "theme_color": "#ffffff",
+    "background_color": "#242621",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "Diego Cruz",
+    "short_name": "diegosiac",
+    "description": "Portafolio diegosiac - Front-end - React Developer, #JavaScript #React",  
+	"icons": [{
+			"src": "/android-icon-36x36.png",
+			"sizes": "36x36",
+			"type": "image/png"
+		},
+		{
+			"src": "/android-icon-48x48.png",
+			"sizes": "48x48",   
+			"type": "image/png"
+		}, {
+			"src": "/android-icon-72x72.png",
+			"sizes": "48x48",
+			"type": "image/png"
+		}, {
+			"src": "/android-icon-96x96.png",
+			"sizes": "120x120",
+			"type": "image/png"
+		}, {
+			"src": "/android-icon-144x144.png",
+			"sizes": "144x144",
+			"type": "image/png"
+		}, {
+			"src": "/android-icon-192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		}
+	],
+    "screenshots": [
+        {
+          "src": "/screenshots/screen1.png",
+          "sizes": "210x336",
+          "type": "image/png",
+          "description": "diegosiac Home Screen"
+        }
+      ],
+      "categories": ["portafolio"]
+}

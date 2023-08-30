@@ -1,0 +1,188 @@
+---
+import AnglesDown from '../components/icons/Anglesdown.astro'
+---
+
+<header class='header border-bottom'>
+	<div class='header__container'>
+
+		<div class='text-selection-disable header__Title'>
+			<h1 class='mobile'>
+				<span class='header__text-light'>F</span>
+				<span>R</span>
+				<span>O</span>
+				<span>N</span>
+				<span>T</span>
+				<br/>
+				<span class='header-text-line'>----</span>
+				<span>E</span>
+				<span>N</span>
+				<span class='header__text-light'>D</span>
+				<br/>
+				<span>D</span>
+				<span>E</span>
+				<span class='header__text-light'>V</span>
+				<span>E</span>
+				<span>L</span>
+				<span class='header__text-light'>O</span>
+				<span>P</span>
+				<span>E</span>
+				<span>R</span>
+			</h1>
+			<h1 class='desktop'>
+				<div>
+					<span class='header__text-light'>F</span>
+					<span>R</span>
+					<span>O</span>
+					<span>N</span>
+					<span>T</span>
+					<span class='header-text-line'>----</span>
+					<span>E</span>
+					<span>N</span>
+					<span class='header__text-light'>D</span>
+				</div>
+				<div>
+					<span>D</span>
+					<span>E</span>
+					<span class='header__text-light'>V</span>
+					<span>E</span>
+					<span>L</span>
+					<span>O</span>
+					<span>P</span>
+					<span>E</span>
+					<span>R</span>
+				</div>
+			</h1>
+		</div>
+
+		<div class='header__info'>
+			<span class='info__Icon'>
+				<AnglesDown className='header__arrow'/>
+			</span>
+			<p>
+				<span>ACERCA DE MÍ:</span>Ayudo a personas
+          increíbles a crear e innovar proyectos web. Desde diseño de interacción, hasta sistemas de diseño escalables.
+			</p>
+		</div>
+
+	</div>
+</header>
+
+<style>
+  .header {
+      color: var(--text--color);
+      display: flex;
+      font-family: var(--font--general);
+      justify-content: center;
+      margin-bottom: 50px;
+      width: 100%;
+  }
+
+  .header__container {
+			gap: 35px;
+			justify-content: space-between;
+			padding: 50px 30px 30px 10px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100svh;
+      width: 100%;
+  }
+
+  .header__Title h1 {
+      font-size: var(--text--heading);
+      letter-spacing: -.255ch;
+      line-height: 71%;
+      margin: 0;
+      text-shadow: 0 0 15px #526f74;
+      word-wrap: break-word;
+  }
+
+	.header__Title h1 span {
+    transition: color 0.2s;
+	}
+
+	.header__Title h1 span:hover {
+		color: #b1cfd3;
+	}
+
+  .header-text-line {
+      margin: 0 5px 0 5px;
+  }
+
+	.text-selection-disable {
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .header__Title .desktop {
+      display: none;
+  }
+
+  .header__info {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .info__Icon {
+      position: relative;
+  }
+
+  .info__Icon .header__arrow {
+			color: #fff;
+			height: 30px;
+      animation: motion 1.2s linear infinite;
+      position: absolute;
+  }
+
+  @keyframes motion {
+      0% {
+          opacity: 0;
+          top: -35px;
+      }
+      50%{
+          opacity: 1;
+      }
+      100% {
+          opacity: 0;
+          top: 70px;
+      }
+  }
+
+  .header__info p {
+	font-weight: 600;
+    color: #ffffff;
+    text-wrap: balance;
+    width: 270px;
+	background-color: #6f9498a1;
+	border-radius: 10px;
+    box-shadow: 0 0 20px 5px #5b7d82d1;
+    padding: 12px;
+  }
+
+  .header__info p span{
+      color: #fff;
+      font-weight: 800;
+			font-size: 14px;
+      margin-right: 8px;
+      text-shadow: 0 0 10px #fff;
+  }
+
+  @media (width >= 768px){
+      .header__Title h1 {
+          font-size: var(--text--heading--pc);
+      }
+  }
+
+  @media (width >= 1100px){
+      .header__Title .mobile {
+          display: none;
+      }
+
+      .header__Title .desktop {
+          display: block;
+      }
+  }
+</style>

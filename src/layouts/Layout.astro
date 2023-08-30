@@ -1,0 +1,105 @@
+---
+import '../styles/index.css'
+
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+		<meta name='generator' content={Astro.generator} />
+		<title>{title}</title>
+		<meta name='title' content='Diego Cruz • @diegosiac' />
+		<meta name='description' content='Portafolio diegosiac - Front-end - React Developer, #JavaScript #React'
+		/>
+		<link rel='canonical' href='https://diegosiac.com/' />
+
+		<link rel='apple-touch-icon' sizes='57x57' href='/apple-icon-57x57.png'>
+		<link rel='apple-touch-icon' sizes='60x60' href='/apple-icon-60x60.png'>
+		<link rel='apple-touch-icon' sizes='72x72' href='/apple-icon-72x72.png'>
+		<link rel='apple-touch-icon' sizes='76x76' href='/apple-icon-76x76.png'>
+		<link rel='apple-touch-icon' sizes='114x114' href='/apple-icon-114x114.png'>
+		<link rel='apple-touch-icon' sizes='120x120' href='/apple-icon-120x120.png'>
+		<link rel='apple-touch-icon' sizes='144x144' href='/apple-icon-144x144.png'>
+		<link rel='apple-touch-icon' sizes='152x152' href='/apple-icon-152x152.png'>
+		<link rel='apple-touch-icon' sizes='180x180' href='/apple-icon-180x180.png'>
+		<link rel='icon' type='image/png' sizes='192x192' href='/android-icon-192x192.png'>
+		<link rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png'>
+		<link rel='icon' type='image/png' sizes='96x96' href='/favicon-96x96.png'>
+		<link rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png'>
+		<link rel='manifest' href='/manifest.json'>
+		<meta name='msapplication-TileColor' content='#ffffff'>
+		<meta name='msapplication-TileImage' content='/ms-icon-144x144.png'>
+		<meta name='theme-color' content='#ffffff'>
+
+		<meta property='og:locale' content='es_ES' />
+		<meta property='og:type' content='website' />
+		<meta property='og:url' content='https://diegosiac.com/' />
+		<meta property='og:title' content='Diego Cruz Portafolio' />
+		<meta property='og:description' content='Portafolio diegosiac - Front-end - React Developer, #JavaScript #React' />
+		<meta property='og:image' content='https://screenshot-proxy.netlify.app/f_avif,fit_cover,s_336x210/https://d33wubrfki0l68.cloudfront.net/64eaab1513b30c0007ae18b8/screenshot_2023-08-27-01-47-27-0000.png' />
+
+		<meta name='twitter:card' content='summary_large_image' />
+		<meta name='twitter:title' content='Diego Cruz Portafolio' />
+		<meta name='twitter:description' content='Portafolio diegosiac - Front-end - React Developer, #JavaScript #React' />
+		<meta name='twitter:image' content='https://screenshot-proxy.netlify.app/f_avif,fit_cover,s_336x210/https://d33wubrfki0l68.cloudfront.net/64eaab1513b30c0007ae18b8/screenshot_2023-08-27-01-47-27-0000.png' />
+		<meta name='twitter:image:alt' content='Portafolio Diego Cruz' />
+		<meta name='twitter:site' content='@diegosiacx' />
+		<meta name='twitter:creator' content='@diegosiacx' />
+
+
+		<link rel='preconnect' href='https://fonts.googleapis.com'>
+		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+		<link href='https://fonts.googleapis.com/css2?family=Chivo:wght@200;400;600;800&family=Suez+One&display=swap' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css2?family=Suez+One&display=swap' rel='stylesheet'>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+    :root{
+        --palete--dark: #26292b;
+        --palete: #6e6e5f;
+        --palete--light: #bbdbde;
+        --palete--lightest: #f5ecda;
+
+        --white--dark: #d1cbbe;
+        --white: #f5ecda;
+        --white--light: #e4dccc;
+
+
+        --folder--top: #666659;
+        --folder--section: #5c5c50;
+
+        --text--size-xxs: 12px;
+        --text--size-xs: 13px;
+        --text--size-md: 14px;
+        --text--size-lg: 16.5px;
+        --text--size-xl: 20px;
+        --text--size-xxl: 35px;
+        --text--heading: 800%;
+        --text--heading--pc: 18vw;
+
+        --text--color: #e0eced;
+        --text--color-ligth: #99998c;
+        --text--color-orange: #c7732a;
+        --text-icons: #ffeddb;
+
+
+        --font--general: 'Chivo', sans-serif;
+        --font--suaz: 'Suez One', serif;
+    }
+
+  body {
+    background: rgb(150,188,192);
+	background: linear-gradient(300deg, rgba(150,188,192,1) 0%, rgba(120,155,161,1) 20%, rgba(84,116,123,1) 58%, rgba(79,110,118,1) 80%, rgba(66,97,105,1) 96%);
+  }
+</style>
