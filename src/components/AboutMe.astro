@@ -1,4 +1,5 @@
 ---
+import { socialNetworks } from '../data/contact.json'
 import GitHub from './icons/GitHub.astro'
 import LinkedIn from './icons/LinkedIn.astro';
 
@@ -34,11 +35,11 @@ import LinkedIn from './icons/LinkedIn.astro';
 			</div>
 
 			<div class='aboutMe-icon'>
-				<a class='button-icon' href='https://github.com/diegosiac' target='_blank'>
+				<a class='button-icon' href={socialNetworks.gitHub} target='_blank'>
 					<GitHub className='icon'/>
 					<span>GitHub</span>
 				</a>
-				<a class='button-icon' href='https://www.linkedin.com/in/diegosiac/' target='_blank'>
+				<a class='button-icon' href={socialNetworks.linkedin} target='_blank'>
 					<LinkedIn className='icon'/>
 					<span>LinkedIn</span>
 				</a>

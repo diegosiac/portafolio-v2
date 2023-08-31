@@ -4,45 +4,47 @@ import GitHub from './icons/GitHub.astro'
 
 export interface Props {
   position: 'left' | 'right';
+  cover: string;
+  description: string;
+  linkDemo: string;
+  linkRepo: string;
+  name: string;
+  toolsList: string[];
 }
 
-const { position = 'left' } = Astro.props
-
-const isPosition = position === 'left' ? 'light' : 'dark'
+const { position = 'left', name, description, cover, linkDemo, linkRepo, toolsList } = Astro.props
 
 ---
 
-<article class={`card-project ${isPosition}`}>
+<article class={`card-project ${position === 'left' ? 'light' : 'dark'}`}>
 
 	<div class={`card-container ${position}`}>
 		<div class='card-images'>
 			<div class='image-bg image-third'></div>
 			<div class='image-bg image-second'></div>
-			<img class='image image-first' src='./assets/projectCover/imagen1.png' alt=''>
+			<img class='image image-first' src={cover} alt=''>
 		</div>
 
 		<div class='card-contend'>
 
-			<h4 class='card-title'>E-commerce(GeekMobile)</h4>
-			<div class='card-description'>
-				<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque nulla perferendis sint at iure repellat sapiente mollitia nihil! Nobis repellendus accusantium vitae unde dolore! Quibusdam cum ipsum necessitatibus dolor tenetur quis provident mollitia, architecto impedit?
-				</p>
+			<h4 class='card-title'>{name}</h4>
+			<div class={`card-description ${position}`}>
+				<p>{description}</p>
 			</div>
 			<div class='card-skills'>
 				<ul class='skills-list'>
-					<li>React</li>
-					<li>Recux</li>
-					<li>Express</li>
-					<li>Node</li>
-					<li>Node</li>
-					<li>Node</li>
+					{
+						toolsList.map(tool => (
+							<li>{tool}</li>
+						))
+					}
 				</ul>
 			</div>
 			<div class='card-links'>
-				<a href=''>
+				<a href={linkRepo}>
 					<GitHub className='card-icon github'/>
 				</a>
-				<a href=''>
+				<a href={linkDemo}>
 					<ArrowFrom className='card-icon arrowfrom'/>
 				</a>
 			</div>
@@ -203,8 +205,8 @@ const isPosition = position === 'left' ? 'light' : 'dark'
       flex-direction: row;
     }
 
-    .card-project {
-      /* padding: 0 0; */
+    .card-contend .left {
+      padding-right: 20px;
     }
 
     .card-container {

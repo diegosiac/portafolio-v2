@@ -1,0 +1,106 @@
+---
+import { socialNetworks } from '../data/contact.json'
+import GitHub from './icons/GitHub.astro'
+import LinkedIn from './icons/LinkedIn.astro'
+
+---
+
+<footer class='footer'>
+	<div class='bar'></div>
+	<div class='footer-content'>
+		<div class='left'>
+			<img src='./assets/logo.png' alt=''>
+		</div>
+		<article class='right'>
+			<address class='container-links'>
+				<a href={socialNetworks.gitHub} target='_blank'>
+					<GitHub className='icon'/>
+				</a>
+				<a href={socialNetworks.linkedin} target='_blank'>
+					<LinkedIn className='icon'/>
+				</a>
+			</address>
+		</article>
+	</div>
+</footer>
+
+<style>
+    .footer {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+      background-color: white;
+      width: 100%;
+      height: 100px;
+    }
+
+		.bar {
+			width: 80%;
+			height: 2px;
+			background-color: #dfdfdf;
+
+		}
+
+		.footer-content {
+			width: 80%;
+			display: flex;
+			max-width: 850px;
+			justify-content: space-between;
+			padding: 20px 0;
+		}
+
+		.left img {
+			width: 40px;
+			height: 40px;
+		}
+
+		.container-links {
+			display: flex;
+			gap: 20px;
+			align-items: center;
+			justify-content: end;
+		}
+
+		.container-links a {
+			align-items: center;
+			appearance: none;
+			background-color: #fff;
+			border-radius: 100%;
+			border-style: none;
+			box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+			cursor: pointer;
+			display: flex;
+			font-family: var(--font--general);
+			height: 50px;
+			width: 50px;
+			justify-content: center;
+			overflow: visible;
+			padding: 10px;
+			position: relative;
+			text-align: center;
+			text-transform: none;
+			transition: box-shadow 350ms cubic-bezier(.4, 0, .2, 1);
+			touch-action: manipulation;
+  }
+
+  .container-links a:hover {
+      box-shadow: rgba(0, 0, 0, .1) 0 4px 12px;
+  }
+
+  .container-links a:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    border: none;
+    outline: none;
+  }
+
+  .container-links a:focus {
+    outline: none;
+    border: 2px solid #d3d3d3;
+  }
+
+  .icon {
+    color: #676767;
+		height: 50px;
+  }
+
+</style>
