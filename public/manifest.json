@@ -37,9 +37,9 @@
 	],
     "screenshots": [
         {
-          "src": "/screenshots/screen1.png",
-          "sizes": "210x336",
-          "type": "image/png",
+          "src": "/screenshots/screen.webp",
+          "sizes": "1259x596",
+          "type": "image/webp",
           "description": "diegosiac Home Screen"
         }
       ],
