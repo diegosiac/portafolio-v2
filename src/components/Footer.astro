@@ -9,14 +9,26 @@ import LinkedIn from './icons/LinkedIn.astro'
 	<div class='bar'></div>
 	<div class='footer-content'>
 		<div class='left'>
-			<img src='./assets/logo.png' alt=''>
+			<img src='./assets/logo.webp' alt=''>
 		</div>
 		<article class='right'>
 			<address class='container-links'>
-				<a href={socialNetworks.gitHub} target='_blank'>
+				<a
+					href={socialNetworks.gitHub}
+					target='_blank'
+					rel='noopener noreferrer'
+					title='Ir al perfil de gitHub de Diego Cruz'
+					aria-label='Ir al perfil de gitHub de Diego Cruz'
+				>
 					<GitHub className='icon'/>
 				</a>
-				<a href={socialNetworks.linkedin} target='_blank'>
+				<a
+					href={socialNetworks.linkedin}
+					target='_blank'
+					rel='noopener noreferrer'
+					title='Ir al Linkedin de Diego Cruz'
+					aria-label='Ir al Linkedin de Diego Cruz'
+				>
 					<LinkedIn className='icon'/>
 				</a>
 			</address>

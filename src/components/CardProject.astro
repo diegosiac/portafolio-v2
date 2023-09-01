@@ -27,7 +27,7 @@ const { position = 'left', name, description, cover, linkDemo, linkRepo, toolsLi
 
 		<div class='card-contend'>
 
-			<h4 class='card-title'>{name}</h4>
+			<h3 class='card-title'>{name}</h3>
 			<div class={`card-description ${position}`}>
 				<p>{description}</p>
 			</div>
@@ -41,10 +41,22 @@ const { position = 'left', name, description, cover, linkDemo, linkRepo, toolsLi
 				</ul>
 			</div>
 			<div class='card-links'>
-				<a href={linkRepo} target='_blank'>
+				<a
+					href={linkRepo}
+					target='_blank'
+					rel='noopener noreferrer'
+					title={`Ir al repositorio en GitHub de ${name}`}
+					aria-label={`Ir al repositorio en GitHub de ${name}`}
+				>
 					<GitHub className='card-icon github'/>
 				</a>
-				<a href={linkDemo} target='_blank'>
+				<a
+					href={linkDemo}
+					target='_blank'
+					rel='noopener noreferrer'
+					title={`Ir a la Demo de ${name}`}
+					aria-label={`Ir a la Demo de ${name}`}
+				>
 					<ArrowFrom className='card-icon arrowfrom'/>
 				</a>
 			</div>

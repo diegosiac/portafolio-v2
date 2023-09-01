@@ -8,7 +8,7 @@ import LinkedIn from './icons/LinkedIn.astro';
 	<section class='aboutMe'>
 
 		<div class='profile-img'>
-			<img src='./assets/ibai.png' alt='Diego Cruz' id='PhotoDiego'/>
+			<img src='./assets/ibai.webp' alt='Diego Cruz' id='PhotoDiego'/>
 		</div>
 
 		<article class='aboutMe-container'>
@@ -35,11 +35,25 @@ import LinkedIn from './icons/LinkedIn.astro';
 			</div>
 
 			<div class='aboutMe-icon'>
-				<a class='button-icon' href={socialNetworks.gitHub} target='_blank'>
+				<a
+					class='button-icon'
+					href={socialNetworks.gitHub}
+					target='_blank'
+					rel='noopener noreferrer'
+					title='Ir al perfil de gitHub de Diego Cruz'
+					aria-label='Ir al perfil de gitHub de Diego Cruz'
+				>
 					<GitHub className='icon'/>
 					<span>GitHub</span>
 				</a>
-				<a class='button-icon' href={socialNetworks.linkedin} target='_blank'>
+				<a
+					class='button-icon'
+					href={socialNetworks.linkedin}
+					target='_blank'
+					rel='noopener noreferrer'
+					title='Ir al Linkedin de Diego Cruz'
+					aria-label='Ir al Linkedin de Diego Cruz'
+				>
 					<LinkedIn className='icon'/>
 					<span>LinkedIn</span>
 				</a>
@@ -146,12 +160,12 @@ background: radial-gradient(circle, rgba(196,218,221,1) 0%, rgba(255,255,255,1) 
     gap: 10px;
     border-radius: 5px;
     color: #fff;
-    background-color: #6a8d92;
+    background-color: #4f838b;
     transition: background-color .2s;
   }
 
   .button-icon:hover {
-    background-color: #4f838b;
+    background-color: #6a8d92;
   }
 
   .aboutMe-icon .icon{
