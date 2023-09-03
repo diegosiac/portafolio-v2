@@ -5,30 +5,33 @@
           "secondCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693748958/Portafolio/cover_geekmobile-second.webp",
           "thirdCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749011/Portafolio/cover_geekmobile-third.webp",
           "name": "E-commerce (GeekMobile)",
-          "description": "Trabajé como desarrollador web para crear un sitio de comercio electrónico para la empresa GeekMobile. El sitio web cuenta con un proceso de compra fluido, entre otras características destacadas.",
+          "description": "He creado una página web destinada a establecer una plataforma de comercio electrónico para la iniciativa GeekMobile. Este sitio web presenta un proceso de compra eficiente, junto con otras características sobresalientes.",
           "linkDeploy": "https://geekmobile.netlify.app/",
           "linkRepo": "https://github.com/diegosiac/E-commerce",
           "toolsList": [
             "MongoDB",
             "Express",
+            "Node",
+            "Tailwind",
             "React",
             "Cypress",
-            "PaypalAPI"
+            "Paypal",
+            "Algolia"
           ]
         },
         {
           "cover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749236/Portafolio/cover_maisonDuBon-main.webp",
           "secondCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749239/Portafolio/cover_maisonDuBon-second.webp",
           "thirdCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749241/Portafolio/cover_maisonDuBon-third.webp",
-          "name": "Reservciones DuBon",
-          "description": "Diseñé un sistema de reservaciones en línea para un restaurante con el objetivo de mejorar la experiencia de los clientes, permitiéndoles realizar reservas de mesas a través de la plataforma web.",
+          "name": "Página de Reservaciones",
+          "description": "Diseñé un sistema de reservaciones en línea destinado a restaurantes, con el propósito de enriquecer la experiencia de los comensales, brindándoles la facilidad de realizar sus reservas de mesa de manera sencilla a través de una plataforma web.",
           "linkDeploy": "https://maisondubon.netlify.app",
           "linkRepo": "https://github.com/diegosiac/PROYECTO-4-Aplicaci-n-Restaurante-",
           "toolsList": [
             "FireBase",
             "React",
             "MaterialUI",
-            "JestJS"
+            "Jest"
           ]
         },
         {
@@ -36,7 +39,7 @@
           "secondCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749476/Portafolio/cover_bumtraker-second.webp",
           "thirdCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749478/Portafolio/cover_bumtraker-third.webp",
           "name": "Dashboard",
-          "description": "Desarrollé un dashboard interactivo diseñado específicamente para proporcionar información detallada y actualizada sobre los streamers en la popular plataforma de Twitch.",
+          "description": "He creado un Dashboard especialmente diseñado para ofrecer información detallada y actualizada, respaldada por gráficos, acerca de los streamers en la reconocida plataforma de streaming Twitch.",
           "linkDeploy": "https://bumtraker.netlify.app",
           "linkRepo": "https://github.com/diegosiac/PROYECTO-3-Dashboard",
           "toolsList": [
@@ -50,7 +53,7 @@
           "secondCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749665/Portafolio/cover_cartshop-second.webp",
           "thirdCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749667/Portafolio/cover_cartshop-third.webp",
           "name": "Carrito de compras",
-          "description": "Desarrolle una interfaz de carrito de compras en línea como ejercicio de práctica. Con la finalidad de desarrollar una experiencia interactiva para los usuarios",
+          "description": "Desarrolle una interfaz de carrito de compras. Con la finalidad de crear una experiencia interactiva para los usuarios y fácil de implementar en una página.",
           "linkDeploy": "https://cartshopcrud.netlify.app",
           "linkRepo": "https://github.com/diegosiac/PROYECTO-2",
           "toolsList": [

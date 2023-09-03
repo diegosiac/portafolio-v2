@@ -2,6 +2,8 @@
   "name": "portafolio-astro",
   "type": "module",
   "version": "0.0.1",
+  "description": "Portafolio de Diego Cruz",
+  "author": "Diego Cruz",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

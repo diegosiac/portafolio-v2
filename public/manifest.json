@@ -1,7 +1,7 @@
 {
     "lang": "ES",
     "theme_color": "#ffffff",
-    "background_color": "#242621",
+    "background_color": "#81adb3",
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
@@ -19,11 +19,11 @@
 			"type": "image/png"
 		}, {
 			"src": "/android-icon-72x72.png",
-			"sizes": "48x48",
+			"sizes": "72x72",
 			"type": "image/png"
 		}, {
 			"src": "/android-icon-96x96.png",
-			"sizes": "120x120",
+			"sizes": "96x96",
 			"type": "image/png"
 		}, {
 			"src": "/android-icon-144x144.png",
