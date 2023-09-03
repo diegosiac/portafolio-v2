@@ -69,7 +69,6 @@ import AnglesDown from '../components/icons/Anglesdown.astro'
 
 <style>
   .header {
-      color: var(--text--color);
       display: flex;
       justify-content: center;
       margin-bottom: 30px;
@@ -87,12 +86,15 @@ import AnglesDown from '../components/icons/Anglesdown.astro'
   }
 
   .header__Title h1 {
-      font-size: var(--text--heading);
-      letter-spacing: -.255ch;
-      line-height: 71%;
-      margin: 0;
-      text-shadow: 0 0 15px #526f74;
-      word-wrap: break-word;
+		font-family: var(--font--heading);
+    font-size: var(--text--heading);
+    color: var(--text--color);
+		/* letter-spacing: -.340ch; */
+		letter-spacing: -.255ch;
+    line-height: 69%;
+    margin: 0;
+    text-shadow: 0 0 15px #526f74;
+    word-wrap: break-word;
   }
 
 	.header__Title h1 span {
@@ -130,23 +132,23 @@ import AnglesDown from '../components/icons/Anglesdown.astro'
   }
 
   .info__Icon .header__arrow {
-			color: #fff;
-			height: 30px;
-      animation: motion 1.2s linear infinite;
-      position: absolute;
+		color: #fff;
+		height: 30px;
+    animation: motion 1.2s linear infinite;
+    position: absolute;
   }
 
   @keyframes motion {
       0% {
           opacity: 0;
-          top: -35px;
+					transform: translateY(-35px);
       }
       50%{
           opacity: 1;
       }
       100% {
           opacity: 0;
-          top: 70px;
+					transform: translateY(70px);
       }
   }
 

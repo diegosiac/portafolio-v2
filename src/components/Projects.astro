@@ -1,6 +1,5 @@
 ---
 import { projectList } from '../data/projects.json'
-import { imageConfig } from 'astro:assets'
 import CardProject from './CardProject.astro';
 
 
@@ -10,12 +9,14 @@ import CardProject from './CardProject.astro';
 	<h2 class='title'>PROYE<span>CTOS</span></h2>
 	<div class='projects-container'>
 		{
-			projectList.map(({ cover, description, linkDeploy, linkRepo, name, toolsList }, index) => {
+			projectList.map(({ cover, secondCover, thirdCover, description, linkDeploy, linkRepo, name, toolsList }, index) => {
 				const isOdd = index % 2 === 0 ? 'left' : 'right'
 
 				return (
 					<CardProject
 						cover={cover}
+						secondCover={secondCover}
+						thirdCover={thirdCover}
 						position={isOdd}
 						description={description}
 						linkDemo={linkDeploy}

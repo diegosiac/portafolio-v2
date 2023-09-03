@@ -1,4 +1,5 @@
 ---
+import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer'
 import '../styles/index.css'
 
 export interface Props {
@@ -15,6 +16,10 @@ const { title } = Astro.props
 		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 		<meta name='generator' content={Astro.generator} />
 		<title>{title}</title>
+
+		<GoogleFontsOptimizer url='https://fonts.googleapis.com/css2?family=Chivo:wght@400;600;800&display=swap'>
+		</GoogleFontsOptimizer>
+
 		<meta name='title' content='Diego Cruz • @diegosiac' />
 		<meta name='description' content='Portafolio diegosiac - Front-end - React Developer, #JavaScript #React'
 		/>
@@ -52,11 +57,6 @@ const { title } = Astro.props
 		<meta name='twitter:image:alt' content='Portafolio Diego Cruz' />
 		<meta name='twitter:site' content='@diegosiacx' />
 		<meta name='twitter:creator' content='@diegosiacx' />
-
-
-		<link rel='preconnect' href='https://fonts.googleapis.com'>
-		<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
-		<link href='https://fonts.googleapis.com/css2?family=Chivo:wght@200;400;600;800&family=Suez+One&display=swap' rel='stylesheet'>
 	</head>
 	<body>
 		<slot />
@@ -64,42 +64,52 @@ const { title } = Astro.props
 </html>
 
 <style is:global>
-    :root{
-        --palete--dark: #26292b;
-        --palete: #6e6e5f;
-        --palete--light: #bbdbde;
-        --palete--lightest: #f5ecda;
+	@font-face {
+    font-family: 'Adjusted Arial Black Fallback';
+    src: local(Arial Black);
+    size-adjust: 75%;
+	font-display: swap;
+    ascent-override: 102%;
+    descent-override: 41%;
+    line-gap-override: 3%;
+	}
 
-        --white--dark: #d1cbbe;
-        --white: #f5ecda;
-        --white--light: #e4dccc;
+  :root{
+    --palete--dark: #26292b;
+    --palete: #6e6e5f;
+    --palete--light: #bbdbde;
+    --palete--lightest: #f5ecda;
 
+    --white--dark: #d1cbbe;
+    --white: #f5ecda;
+    --white--light: #e4dccc;
 
-        --folder--top: #666659;
-        --folder--section: #5c5c50;
+    --folder--top: #666659;
+    --folder--section: #5c5c50;
 
-        --text--size-xxs: 12px;
-        --text--size-xs: 13px;
-        --text--size-md: 14px;
-        --text--size-lg: 16.5px;
-        --text--size-xl: 20px;
-        --text--size-xxl: 35px;
-        --text--heading: 800%;
-        --text--heading--pc: 18vw;
+    --text--size-xxs: 12px;
+    --text--size-xs: 13px;
+		--text--size-md: 14px;
+		--text--size-lg: 16.5px;
+		--text--size-xl: 20px;
+		--text--size-xxl: 35px;
+		--text--heading: 800%;
+		--text--heading--pc: 18vw;
 
-        --text--color: #e0eced;
-        --text--color-ligth: #99998c;
-        --text--color-orange: #c7732a;
-        --text-icons: #ffeddb;
+    --text--color: #e0eced;
+    --text--color-ligth: #99998c;
+    --text--color-orange: #c7732a;
+    --text-icons: #ffeddb;
 
-
-        --font--general: 'Chivo', sans-serif;
-    }
+    --font--general: 'Chivo', Arial, Helvetica, sans-serif;
+    --font--heading: 'Chivo', 'Adjusted Arial Black Fallback';
+  }
 
   body {
     background: rgb(150,188,192);
 	background: linear-gradient(300deg, rgba(150,188,192,1) 0%, rgba(120,155,161,1) 20%, rgba(84,116,123,1) 58%, rgba(79,110,118,1) 80%, rgba(66,97,105,1) 96%);
-
+	color: #fff;
     font-family: var(--font--general);
   }
 </style>
+

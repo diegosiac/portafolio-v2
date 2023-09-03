@@ -5,6 +5,8 @@ import GitHub from './icons/GitHub.astro'
 export interface Props {
   position: 'left' | 'right';
   cover: string;
+  secondCover: string;
+  thirdCover: string;
   description: string;
   linkDemo: string;
   linkRepo: string;
@@ -12,7 +14,7 @@ export interface Props {
   toolsList: string[];
 }
 
-const { position = 'left', name, description, cover, linkDemo, linkRepo, toolsList } = Astro.props
+const { position = 'left', name, description, cover, secondCover, thirdCover, linkDemo, linkRepo, toolsList } = Astro.props
 
 ---
 
@@ -20,9 +22,9 @@ const { position = 'left', name, description, cover, linkDemo, linkRepo, toolsLi
 
 	<div class={`card-container ${position}`}>
 		<div class='card-images'>
-			<div class='image-bg image-third'></div>
-			<div class='image-bg image-second'></div>
-			<img class='image image-first' src={cover} alt=''>
+			<div class='image-bg image-third' style={`background-image: url(${thirdCover});`}></div>
+			<div class='image-bg image-second' style={`background-image: url(${secondCover});`}></div>
+			<img class='image image-first' src={cover} alt={`Imagen del proyecto ${name}`}>
 		</div>
 
 		<div class='card-contend'>
@@ -99,6 +101,7 @@ const { position = 'left', name, description, cover, linkDemo, linkRepo, toolsLi
     width: 300px;
     height: 150px;
     object-fit: cover;
+    object-position: 0 0;
     position: absolute;
   }
 
@@ -113,18 +116,17 @@ const { position = 'left', name, description, cover, linkDemo, linkRepo, toolsLi
   .image-second {
     top: -5px;
     left: 20px;
-    background-image: url(./assets/projectCover/imagen3.png);
   }
 
   .image-third {
     left: 5px;
-    background-image: url(./assets/projectCover/imagen2.png);
     background-position: -130px 0px;
   }
 
   .card-contend {
     display: flex;
     flex-direction: column;
+    color: #000;
   }
 
   .card-title {

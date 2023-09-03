@@ -1,7 +1,9 @@
 {
     "projectList": [
         {
-          "cover": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/64db23711db2143195ab6162/screenshot_2023-08-15-07-04-21-0000.png",
+          "cover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693748763/Portafolio/cover_geekmobile-main.webp",
+          "secondCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693748958/Portafolio/cover_geekmobile-second.webp",
+          "thirdCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749011/Portafolio/cover_geekmobile-third.webp",
           "name": "E-commerce (GeekMobile)",
           "description": "Trabajé como desarrollador web para crear un sitio de comercio electrónico para la empresa GeekMobile. El sitio web cuenta con un proceso de compra fluido, entre otras características destacadas.",
           "linkDeploy": "https://geekmobile.netlify.app/",
@@ -15,7 +17,9 @@
           ]
         },
         {
-          "cover": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/6456fd880554c812e143edb2/screenshot_2023-05-07-01-23-23-0000.png",
+          "cover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749236/Portafolio/cover_maisonDuBon-main.webp",
+          "secondCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749239/Portafolio/cover_maisonDuBon-second.webp",
+          "thirdCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749241/Portafolio/cover_maisonDuBon-third.webp",
           "name": "Reservciones DuBon",
           "description": "Diseñé un sistema de reservaciones en línea para un restaurante con el objetivo de mejorar la experiencia de los clientes, permitiéndoles realizar reservas de mesas a través de la plataforma web.",
           "linkDeploy": "https://maisondubon.netlify.app",
@@ -28,7 +32,9 @@
           ]
         },
         {
-          "cover": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/640e894ae07b007f889bd041/screenshot_2023-03-13-02-24-12-0000.png",
+          "cover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749474/Portafolio/cover_bumtraker-main.webp",
+          "secondCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749476/Portafolio/cover_bumtraker-second.webp",
+          "thirdCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749478/Portafolio/cover_bumtraker-third.webp",
           "name": "Dashboard",
           "description": "Desarrollé un dashboard interactivo diseñado específicamente para proporcionar información detallada y actualizada sobre los streamers en la popular plataforma de Twitch.",
           "linkDeploy": "https://bumtraker.netlify.app",
@@ -40,7 +46,9 @@
           ]
         },
         {
-          "cover": "https://screenshot-proxy.netlify.app/f_avif,w_336/https://d33wubrfki0l68.cloudfront.net/64db24a5cba0af3061d28d1e/screenshot_2023-08-15-07-09-28-0000.png",
+          "cover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749664/Portafolio/cover_cartshop-main.webp",
+          "secondCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749665/Portafolio/cover_cartshop-second.webp",
+          "thirdCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749667/Portafolio/cover_cartshop-third.webp",
           "name": "Carrito de compras",
           "description": "Desarrolle una interfaz de carrito de compras en línea como ejercicio de práctica. Con la finalidad de desarrollar una experiencia interactiva para los usuarios",
           "linkDeploy": "https://cartshopcrud.netlify.app",
