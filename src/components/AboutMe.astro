@@ -8,7 +8,7 @@ import LinkedIn from './icons/LinkedIn.astro';
 	<section class='aboutMe'>
 
 		<div class='profile-img'>
-			<img src='./assets/ibai.webp' alt='Foto de Diego Cruz'/>
+			<img src='./assets/photoDiegoCruz.webp' alt='Foto de Diego Cruz'/>
 		</div>
 
 		<article class='aboutMe-container'>
@@ -75,21 +75,25 @@ background: radial-gradient(circle, rgba(196,218,221,1) 0%, rgba(255,255,255,1) 
   }
 
   .profile-img {
-      background-color: #a593c2;
-      margin-bottom: 30px;
-  }
-
-  .profile-img {
     position: relative;
     width: max-content;
+    display: flex;
+    align-items: end;
+    margin-bottom: 30px;
+    background: rgb(150,188,192);
+    background: linear-gradient(151deg, rgba(150,188,192,1) 0%, rgba(193,215,218,1) 100%, rgba(252,253,253,1) 100%, rgba(255,255,255,1) 100%);
+  }
+
+  .profile-img img {
+    object-position: 0 10px;
   }
 
   .profile-img::after {
     position: absolute;
     content: "</>";
-    background-color: #e3d6ca;
+    background-color: #328087;
     width: 125px;
-    color: #000000;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +108,6 @@ background: radial-gradient(circle, rgba(196,218,221,1) 0%, rgba(255,255,255,1) 
   .profile-img img {
     width: 310px;
     object-fit: cover;
-    aspect-ratio: 1/1;
   }
 
   .aboutMe-title {
@@ -141,7 +144,6 @@ background: radial-gradient(circle, rgba(196,218,221,1) 0%, rgba(255,255,255,1) 
     max-width: 470px;
     width: 100%;
     margin-bottom: 34px;
-    /* text-wrap: balance; */
   }
 
   .aboutMe-description p{

@@ -5,7 +5,7 @@
           "secondCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693748958/Portafolio/cover_geekmobile-second.webp",
           "thirdCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749011/Portafolio/cover_geekmobile-third.webp",
           "name": "E-commerce (GeekMobile)",
-          "description": "He creado una página web destinada a establecer una plataforma de comercio electrónico para la iniciativa GeekMobile. Este sitio web presenta un proceso de compra eficiente, junto con otras características sobresalientes.",
+          "description": "Cree una página web destinada a establecer una plataforma de comercio electrónico para la iniciativa GeekMobile. Este sitio web presenta un proceso de compra eficiente, junto con otras características sobresalientes.",
           "linkDeploy": "https://geekmobile.netlify.app/",
           "linkRepo": "https://github.com/diegosiac/E-commerce",
           "toolsList": [
@@ -39,7 +39,7 @@
           "secondCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749476/Portafolio/cover_bumtraker-second.webp",
           "thirdCover": "https://res.cloudinary.com/dsnsomt1k/image/upload/v1693749478/Portafolio/cover_bumtraker-third.webp",
           "name": "Dashboard",
-          "description": "He creado un Dashboard especialmente diseñado para ofrecer información detallada y actualizada, respaldada por gráficos, acerca de los streamers en la reconocida plataforma de streaming Twitch.",
+          "description": "Cree un Dashboard especialmente diseñado para ofrecer información detallada y actualizada, respaldada por gráficos, acerca de los streamers en la reconocida plataforma de streaming Twitch.",
           "linkDeploy": "https://bumtraker.netlify.app",
           "linkRepo": "https://github.com/diegosiac/PROYECTO-3-Dashboard",
           "toolsList": [
