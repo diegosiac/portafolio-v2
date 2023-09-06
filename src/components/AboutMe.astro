@@ -84,14 +84,10 @@ background: radial-gradient(circle, rgba(196,218,221,1) 0%, rgba(255,255,255,1) 
     background: linear-gradient(151deg, rgba(150,188,192,1) 0%, rgba(193,215,218,1) 100%, rgba(252,253,253,1) 100%, rgba(255,255,255,1) 100%);
   }
 
-  .profile-img img {
-    object-position: 0 10px;
-  }
-
   .profile-img::after {
     position: absolute;
     content: "</>";
-    background-color: #328087;
+    background-color: #578e93;
     width: 125px;
     color: #fff;
     display: flex;
@@ -101,13 +97,15 @@ background: radial-gradient(circle, rgba(196,218,221,1) 0%, rgba(255,255,255,1) 
     font-size: 50px;
     height: 120px;
     border-radius: 10px;
-    right: -40px;
-    top: -40px;
+    right: -50px;
+    top: -70px;
   }
 
   .profile-img img {
-    width: 310px;
+    width: 240px;
+    height: 370px;
     object-fit: cover;
+    object-position: -15px 10px;
   }
 
   .aboutMe-title {
@@ -176,7 +174,7 @@ background: radial-gradient(circle, rgba(196,218,221,1) 0%, rgba(255,255,255,1) 
     height: 25px;
   }
 
-  @media (450px < width <= 884px) {
+  @media (width <= 884px) {
     .aboutMe {
       align-items: center;
     }
