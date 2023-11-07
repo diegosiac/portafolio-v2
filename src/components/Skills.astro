@@ -10,33 +10,28 @@ import Jest from './icons/Jest.astro'
 import Cypress from './icons/Cypress.astro'
 import Git from './icons/Git.astro'
 import Tailwind from './icons/Tailwind.astro'
-
-
 ---
 
-
 <section class='skills'>
-
 	<div class='title-container'>
 		<h2 class='title'>SKILLS</h2>
 	</div>
 
-
 	<div class='skills-container'>
 		<div class='column'>
 			<CardSkill text='JavaScript'>
-				<JavaScript className='icon'/>
-			</CardSkill >
+				<JavaScript className='icon' />
+			</CardSkill>
 			<CardSkill text='React'>
 				<React className='icon' />
 			</CardSkill>
 		</div>
 		<div class='column'>
 			<CardSkill text='MongoDB'>
-				<MongoDB className='icon'/>
+				<MongoDB className='icon' />
 			</CardSkill>
 			<CardSkill text='Express'>
-				<Express className='icon'/>
+				<Express className='icon' />
 			</CardSkill>
 			<CardSkill text='Node'>
 				<Node className='icon' />
@@ -52,35 +47,35 @@ import Tailwind from './icons/Tailwind.astro'
 		</div>
 		<div class='column'>
 			<CardSkill text='Cypress'>
-				<Cypress className='icon'/>
+				<Cypress className='icon' />
 			</CardSkill>
 			<CardSkill text='Git'>
-				<Git className='icon'/>
+				<Git className='icon' />
 			</CardSkill>
 			<CardSkill text='Tailwind'>
-				<Tailwind className='icon'/>
+				<Tailwind className='icon' />
 			</CardSkill>
 		</div>
 	</div>
 </section>
 
 <style>
-  .skills {
+	.skills {
 		background-color: #fff;
 		display: flex;
-    flex-direction: column;
-    align-items: center;
+		flex-direction: column;
+		align-items: center;
 		padding: 80px 0 200px;
 	}
 
 	.title-container {
-    margin-bottom: 70px;
+		margin-bottom: 70px;
 		position: relative;
 	}
 
 	.title {
 		font-size: 650%;
-    letter-spacing: -.1ch;
+		letter-spacing: -0.1ch;
 		color: #d6d6d6;
 	}
 
@@ -100,10 +95,10 @@ import Tailwind from './icons/Tailwind.astro'
 	}
 
 	.icon {
-    height: 50px;
-  }
+		height: 50px;
+	}
 
-	@media (width >= 998px){
+	@media (width >= 998px) {
 		.skills {
 			flex-direction: row;
 			justify-content: center;
